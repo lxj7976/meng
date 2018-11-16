@@ -1,0 +1,14 @@
+<!--index.wxml-->
+<view class="container">
+    <map class="map" id="map" longitude="{{longitude}}" latitude="{{latitude}}" scale="14" controls="{{controls}}" bindcontroltap="controltap" markers="{{markers}}" bindmarkertap="markertap" polyline="{{polyline}}" bindregionchange="regionchange" show-location ></map>
+    <cover-view class="play pin">
+      <cover-image class="img" src="/resources/pin.png" />
+    </cover-view>
+    <cover-view class="play center" bindtap="goCenter">
+      <cover-image class="img" src="/resources/center.png" />
+    </cover-view>
+</view>
+<view class="btns">
+  <view bindtap='gopub'>发布</view>
+  <view>搜索</view>
+</view>

@@ -1,0 +1,19 @@
+/* pages/publish/publish.wxss */
+.row{
+  line-height: 80rpx;
+  display: flex;
+  border-bottom: 1px solid #cccc;
+  height: 80rpx;
+}
+.row label{
+  width: 200rpx;
+}
+.row input{
+  width: 550rpx;
+  line-height: 80rpx;
+  height: 80rpx;
+}
+.pub{
+  background:#ff9700;
+  margin: 10rpx;
+}
