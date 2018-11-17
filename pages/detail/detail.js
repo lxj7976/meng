@@ -1,4 +1,4 @@
-// pages/publist/publish.js
+// pages/detail/detail.js
 Page({
 
   /**
@@ -11,8 +11,19 @@ Page({
   /**
    * 生命周期函数--监听页面加载
    */
-  onLoad: function (options) {
-
+  onLoad: function (e) {
+    console.log(e)
+    wx.request({
+      url: 'http://localhost:3000/list/'+e.id,
+      header: {"content-type":"application/json"},
+      method: 'GET',
+      success: (res)=> {
+        this.setData({
+          obj:res.data
+        })
+        console.log(res);
+      }
+    })
   },
 
   /**

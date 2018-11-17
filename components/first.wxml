@@ -1,0 +1,7 @@
+<!--components/first.wxml-->
+<view>
+  <text>components/first.wxml</text>
+  <view>{{d}}</view>
+  <button bindtap='send'>发送</button>
+</view>
+

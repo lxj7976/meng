@@ -8,7 +8,7 @@ Page({
     address:"点击选择，要勾选哦~"
   },
   info:{
-
+    type:'sell'
   },
   // 选择地址
   choose(){
@@ -16,7 +16,12 @@ Page({
       success: (res)=> {
         this.setData({
           address:res.address
-        })
+        }),
+          Object.assign(this.info, {
+            address: res.address,
+            longitude: res.longitude,
+            latitude: res.latitude,
+          })  
       },
     })
   },
@@ -55,6 +60,12 @@ Page({
         })
       }
     })
+  },
+  re(e){
+    console.log(e.detail.c)
+  },
+  zhi(e){
+    console.log(e.detail.c)
   },
   /**
    * 生命周期函数--监听页面加载

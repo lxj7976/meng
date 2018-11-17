@@ -7,7 +7,26 @@ Page({
   data: {
 
   },
-
+  input(e){
+    this.setData({
+      str:e.detail.value
+    })
+  },
+  search(){
+    console.log("ddd")
+    wx.request({
+      url: 'http://localhost:3000/list',
+      data: {q:this.data.str},
+      header: {"context-type":"application/json"},
+      method: 'GET',
+      success: (res)=> {
+        console.log(res)
+        this.setData({
+          list:res.data
+        })
+      },
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */

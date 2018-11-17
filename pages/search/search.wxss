@@ -1,1 +1,22 @@
 /* pages/search/search.wxss */
+.row{
+  display: flex;
+  background: #03bbd5;
+  height: 80rpx;
+}
+.row input{
+  width: 75%;
+  background: #ffff;
+  border-radius:10rpx;
+  line-height: 80rpx;
+  margin: auto
+}
+.row button{
+  color:white;
+  background: transparent;
+  font-size: 40rpx;
+  line-height: 80rpx;
+}
+.row button::after{
+  border: none;
+}

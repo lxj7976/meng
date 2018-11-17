@@ -1,2 +1,9 @@
 <!--pages/search/search.wxml-->
-<text>pages/search/search.wxml</text>
+<view class="row">
+<input bindinput="input" focus="{{true}}"></input>
+<button bindtap='search' >搜索</button>
+</view>
+<view wx:for="{{list}}" wx:key="{{item.id}}">
+   <!-- <template is="item" data="{{item}}"  /> -->
+   {{item.address}}
+</view>

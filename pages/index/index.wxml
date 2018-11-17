@@ -10,5 +10,5 @@
 </view>
 <view class="btns">
   <view bindtap='gopub'>发布</view>
-  <view>搜索</view>
+  <view bindtap='gosearch'>搜索</view>
 </view>

@@ -1,1 +1,6 @@
-{}
+{
+  "usingComponents": {
+    "first":"../../components/first",
+    "two":"../../components/two"
+  }
+}

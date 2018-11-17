@@ -1,0 +1,21 @@
+<!--pages/detail/detail.wxml-->
+<view class="row">
+  <label>我的地址：</label>
+  <view bindtap='choose'>{{obj.address}}</view>
+</view>
+<view class="row">
+  <label>类型：</label>
+   <view>{{obj.type==="sell"?"猫":"狗"}}</view>
+</view>
+<view class="row">
+  <label>说明:</label>
+  <view>
+    {{obj.msg}}
+  </view>
+</view>
+<view class="row">
+  <label>联系方式</label>
+  <view>
+    {{obj.contact}}
+  </view>
+</view>

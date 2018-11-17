@@ -1,0 +1,7 @@
+<!--components/two.wxml-->
+<view>
+  <text>components/two.wxml</text>
+  <view>{{d}}</view>
+  <button bindtap='sendTo'>传值</button>
+</view>
+
